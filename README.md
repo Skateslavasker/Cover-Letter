@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+## **Cover Letter Generator**   
+  
+### Overview   
 
-## Getting Started
+The Cover Letter Generator is a web application that allows users to generate and customize professional cover letters based on job descriptions. Users can input a LinkedIn job profile link, generate a tailored cover letter using OpenAI's GPT model, customize the content further, and download the final cover letter as a Word document.  
 
-First, run the development server:
+## Features  
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+- Generate Cover Letter: Enter a job link to generate a cover letter.
+- Customize Cover Letter: Modify the generated content and update it dynamically.
+- Download Word Document: Save the generated cover letter as a .doc file.
+- Clear All: Reset the generated and customized content with a single click.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Technologies Used  
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Frontend  
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- React: For building the user interface.
+- Next.js: Framework for server-side rendering and client-side navigation.
+- Tailwind CSS: For responsive and modern styling.
+- TypeScript: For type safety and better developer experience.  
 
-## Learn More
+### Backend  
 
-To learn more about Next.js, take a look at the following resources:
+- Flask: Lightweight Python web framework to handle API requests.
+- OpenAI GPT-3.5/4 API: Used for generating and customizing cover letters.
+- Flask-CORS: To enable cross-origin requests from the frontend.
+- dotenv: To manage environment variables securely.  
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+### Utilities  
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+- Blob API: For generating downloadable Word documents dynamically.
+- REST Client: To test the backend API endpoints.
+- File Saver: Optional library for easier file downloads.  
 
-## Deploy on Vercel
+## Requirements  
+- Node.js (v14 or later)
+- Python (v3.8 or later)
+- OpenAI API Key  
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Usage  
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Generate Cover Letter: Enter a LinkedIn job profile link and click Generate Cover Letter.  
+
+Customize Cover Letter: Edit the generated content in the customization text area and click Customize Cover Letter.  
+
+Download Word Doc: Click Download Word Doc to save the generated cover letter as a `.doc` file.  
+
+Clear All: Click Clear to reset the generated and customized content.  
+
+
+
+## Contributing  
+Feel free to fork this repository and submit pull requests for new features, bug fixes, or enhancements.
+
+
+
